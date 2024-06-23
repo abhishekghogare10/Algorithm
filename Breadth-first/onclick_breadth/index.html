@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="border"></div> -->
+      <div class="firsXtDiv border">
+        <a href="/index.html"> <img id="logo" src="images/previous.png" alt="" />
+      </a>
+        </div>
+      <div class="secondDiv border">
+        <h2>Breadth Path Finding Algorithm</h2>
+        <br />
+          <p>In this article, we will discuss the DFS algorithm in the data structure.
+             It is a recursive algorithm to search all the vertices of a tree data structure or a graph.
+              The depth-first search (DFS) algorithm starts with the initial node of graph G and goes deeper until we find the goal node or the node with no children.</p>
+              <p>Because of the recursive nature, stack data structure can be used to implement the DFS algorithm.
+                 The process of implementing the DFS is similar to the BFS algorithm.</p>
+        <br />
+        <h2>How does Breadth Path Finding Algorithm Work?</h2>
+        <br />
+        <p>Now, let's see the working of Breadth Path Finding Algorithm.</p>
+        <p>Let's see how the Depth First Search algorithm works with an example. We use an undirected graph with 5 vertices.</p><p>Here, 26 is smaller than 36. So, swapping is required. After swapping new array will look like -</p>
+        <img alt="We start from vertex 0, the DFS algorithm starts by putting it in the Visited list and putting all its adjacent vertices in the stack." height="300" src="//cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-0.png" title="A DFS example" width="450">
+        <p>We start from vertex 0, the DFS algorithm starts by putting it in the Visited list and putting all its adjacent vertices in the stack.</p>          
+        <img alt="Start by putting it in the Visited list and putting all its adjacent vertices in the stack." height="300" src="//cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-1.png" title="A DFS example" width="450">
+        <p>Next, we visit the element at the top of stack i.e. 1 and go to its adjacent nodes. Since 0 has already been visited, we visit 2 instead.</p>          <h3 class="h3">First Pass</h3>
+        <img alt="Next, we visit the element at the top of stack i.e. 1 and go to its adjacent nodes. Since 0 has already been visited, we visit 2 instead." height="300" src="//cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-2.png" title="A DFS example" width="450">          
+        <p>After we visit the last element 3, it doesn't have any unvisited adjacent nodes, so we have completed the Depth First Traversal of the graph.</p>
+        <img alt="After we visit the last element 3, it doesn't have any unvisited adjacent nodes, so we have completed the Depth First Traversal of the graph." height="200" src="//cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-5.png" title="A DFS example" width="450">            
+        <h2 id="applications">Application of DFS Algorithm</h2>
+        <ol><b><li>For finding the path</li>
+          <li>To test if the graph is bipartite</li>
+          <li>For finding the strongly connected components of a graph</li>
+          <li>For detecting cycles in a graph</li></b>
+        </ol>
+          <!-- <p><strong>Illustration:</strong></p> -->
+        </blockquote>
+        <div class="buttonClass">
+          <!-- <button>View Visulaziaton</button> -->
+        </div>
+      </div>
+      <div class="thirdDiv">
+        <div class="thirdDivFirst">
+          <img src="/images/BFS.png" alt="" />
+          <!-- <h3>this image</h3> -->
+        </div>
+        <div class="fourthDiv">
+          <button onclick="location.href='/Breadth-first/index.html'">
+            View Visulaziaton
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/java.js"></script>
+  </body>
+</html>

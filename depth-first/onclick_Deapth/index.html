@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="border"></div> -->
+      <div class="firsXtDiv border">
+        <a href="/index.html"> <img id="logo" src="images/previous.png" alt="" />
+      </a>
+        </div>
+      <div class="secondDiv border">
+        <!-- <h1>Deapth Algorithm</h1> -->
+        <br />
+        <h1>Depth First Search (DFS)</h1>
+        <br>
+        <p class="editor-contents__short-description">In this tutorial, you will learn about depth first search algorithm with example. Also, you will learn to implement DFS in C, Java, Python, and C++.</p>
+        <p id="introduction">Depth first Search or Depth first traversal is a recursive algorithm for searching all the vertices of a graph or tree data structure. Traversal means visiting all the nodes of a graph.</p>
+        <br>
+        <h2 id="algo">Depth First Search Algorithm</h2>
+        <br>
+        <p>A standard DFS implementation puts each vertex of the graph into one of two categories:</p>
+        <ol><li>Visited</li>
+          <li>Not Visited</li>
+        </ol>
+        <br>
+        <p>The purpose of the algorithm is to mark each vertex as visited while avoiding cycles.</p>
+        <p>The DFS algorithm works as follows:</p>
+        <br>
+        <li>Start by putting any one of the graph's vertices on top of a stack.</li>
+        <li>Take the top item of the stack and add it to the visited list.</li>
+        <li>Create a list of that vertex's adjacent nodes. Add the ones which aren't in the visited list to the top of the stack.</li>
+        <li>Keep repeating steps 2 and 3 until the stack is empty.</li>
+        <br>
+        <h2 id="example">Depth First Search Example</h2>
+      
+        <figure><img alt="We start from vertex 0, the DFS algorithm starts by putting it in the Visited list and putting all its adjacent vertices in the stack." height="484" src="//cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-0.png" title="A DFS example" width="1460"><figcaption>Undirected graph with 5 vertices</figcaption></figure>
+        <p>We start from vertex 0, the DFS algorithm starts by putting it in the Visited list and putting all its adjacent vertices in the stack.</p>
+        <figure><img alt="Start by putting it in the Visited list and putting all its adjacent vertices in the stack." height="484" src="//cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-1.png" title="A DFS example" width="1460"><figcaption>Visit the element and put it in the visited list</figcaption></figure>
+        <p>Next, we visit the element at the top of stack i.e. 1 and go to its adjacent nodes. Since 0 has already been visited, we visit 2 instead.</p>
+        <figure><img alt="Next, we visit the element at the top of stack i.e. 1 and go to its adjacent nodes. Since 0 has already been visited, we visit 2 instead." height="484" src="//cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-2.png" title="A DFS example" width="1460"><figcaption>Visit the element at the top of stack</figcaption></figure>
+        <p>Vertex 2 has an unvisited adjacent vertex in 4, so we add that to the top of the stack and visit it.</p>
+        <figure><img alt="Vertex 2 has an unvisited adjacent vertex in 4, so we add that to the top of the stack and visit it." height="484" src="//cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-3.png" title="A DFS example" width="1460"><figcaption>Vertex 2 has an unvisited adjacent vertex in 4, so we add that to the top of the stack and visit it.</figcaption></figure>
+        <figure><img alt="Vertex 2 has an unvisited adjacent vertex in 4, so we add that to the top of the stack and visit it." height="484" src="//cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-4.png" title="A DFS example" width="1460"><figcaption>Vertex 2 has an unvisited adjacent vertex in 4, so we add that to the top of the stack and visit it.</figcaption></figure>
+        <p>After we visit the last element 3, it doesn't have any unvisited adjacent nodes, so we have completed the Depth First Traversal of the graph.</p>
+        <figure><img alt="After we visit the last element 3, it doesn't have any unvisited adjacent nodes, so we have completed the Depth First Traversal of the graph." height="484" src="//cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-5.png" title="A DFS example" width="1460"><figcaption>After we visit the last element 3, it doesn't have any unvisited adjacent nodes, so we have completed the Depth First Traversal of the graph.</figcaption></figure>
+        
+          <!-- <p><strong>Illustration:</strong></p> -->
+        </blockquote>
+        <div class="buttonClass">
+          <!-- <button>View Visulaziaton</button> -->
+        </div>
+      </div>
+      <div class="thirdDiv">
+        <div class="thirdDivFirst">
+          <img id="aaa" src="/images/DFS.jpg" alt="" />
+          <!-- <h3>this image</h3> -->
+        </div>
+        <div class="fourthDiv">
+          <button onclick="location.href='/depth-first/index.html'">
+            View Visulaziaton
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/java.js"></script>
+  </body>
+</html>

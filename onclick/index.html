@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="border"></div> -->
+      <div class="firsXtDiv border">
+        <img src="images/previous.png" alt="" />
+      </div>
+      <div class="secondDiv border">
+        <h2>Bubble Sort Algorithm</h2>
+        <br />
+        <p>
+          Bubble Sort is the simplest sorting algorithm that works by repeatedly
+          swapping the adjacent elements if they are in the wrong order. This
+          algorithm is not suitable for large data sets as its average and
+          worst-case time complexity is quite high.
+        </p>
+        <br />
+        <h2>How does Bubble Sort Work?</h2>
+        <br />
+        <blockquote>
+          <p><strong>Input:</strong> arr[] = {5, 1, 4, 2, 8}</p>
+          <div id="GFG_AD_gfg_mobile_336x280"></div>
+          <br />
+          <p><strong>First Pass:</strong>&nbsp;</p>
+          <ul>
+            <li>
+              Bubble sort starts with very first two elements, comparing them to
+              check which one is greater.
+              <ul>
+                <li>
+                  ( <strong>5</strong> <strong>1</strong> 4 2 8 ) –&gt; (
+                  <strong>1</strong> <strong>5</strong> 4 2 8 ), Here, algorithm
+                  compares the first two elements, and swaps since 5 &gt;
+                  1.&nbsp;
+                </li>
+                <li>
+                  ( 1 <strong>5</strong> <strong>4</strong> 2 8 ) –&gt;&nbsp; (
+                  1 <strong>4</strong> <strong>5</strong> 2 8 ), Swap since 5
+                  &gt; 4&nbsp;
+                </li>
+                <li>
+                  ( 1 4 <strong>5</strong> <strong>2</strong> 8 ) –&gt;&nbsp; (
+                  1 4 <strong>2</strong> <strong>5</strong> 8 ), Swap since 5
+                  &gt; 2&nbsp;
+                </li>
+                <li>
+                  ( 1 4 2 <strong>5</strong> <strong>8</strong> ) –&gt; ( 1 4 2
+                  <strong>5</strong> <strong>8</strong> ), Now, since these
+                  elements are already in order (8 &gt; 5), algorithm does not
+                  swap them.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <br />
+          <p><strong>Second Pass:</strong>&nbsp;</p>
+          <!-- <br /> -->
+          <ul>
+            <li>
+              Now, during second iteration it should look like this:
+              <ul>
+                <li>
+                  ( <strong>1</strong> <strong>4</strong> 2 5 8 ) –&gt; (
+                  <strong>1</strong> <strong>4</strong> 2 5 8 )&nbsp;
+                </li>
+                <li>
+                  ( 1 <strong>4</strong> <strong>2</strong> 5 8 ) –&gt; ( 1
+                  <strong>2</strong> <strong>4</strong> 5 8 ), Swap since 4 &gt;
+                  2&nbsp;
+                </li>
+                <li>
+                  ( 1 2 <strong>4</strong> <strong>5</strong> 8 ) –&gt; ( 1 2
+                  <strong>4</strong> <strong>5</strong> 8 )&nbsp;
+                </li>
+                <li>
+                  ( 1 2 4 <strong>5</strong> <strong>8</strong> ) –&gt;&nbsp; (
+                  1 2 4 <strong>5</strong> <strong>8</strong> )&nbsp;
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <br />
+          <p><strong>Third Pass:</strong>&nbsp;</p>
+          <!-- <br /> -->
+          <ul>
+            <li>
+              Now, the array is already sorted, but our algorithm does not know
+              if it is completed.
+            </li>
+            <li>
+              The algorithm needs one <strong>whole</strong> pass without
+              <strong>any</strong> swap to know it is sorted.
+              <ul>
+                <li>
+                  ( <strong>1</strong> <strong>2</strong> 4 5 8 ) –&gt; (
+                  <strong>1</strong> <strong>2</strong> 4 5 8 )&nbsp;
+                </li>
+                <li>
+                  ( 1 <strong>2</strong> <strong>4</strong> 5 8 ) –&gt; ( 1
+                  <strong>2</strong> <strong>4</strong> 5 8 )&nbsp;
+                </li>
+                <li>
+                  ( 1 2 <strong>4</strong> <strong>5</strong> 8 ) –&gt; ( 1 2
+                  <strong>4</strong> <strong>5</strong> 8 )&nbsp;
+                </li>
+                <li>
+                  ( 1 2 4 <strong>5</strong> <strong>8</strong> ) –&gt; ( 1 2 4
+                  <strong>5</strong> <strong>8</strong> )&nbsp;
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <p><strong>Illustration:</strong></p> -->
+        </blockquote>
+        <div class="buttonClass">
+          <!-- <button>View Visulaziaton</button> -->
+        </div>
+      </div>
+      <div class="thirdDiv">
+        <div class="thirdDivFirst">
+          <img src="images/bubble-sort1.png" alt="" />
+          <!-- <h3>this image</h3> -->
+        </div>
+        <div class="fourthDiv">
+          <button>View Visulaziaton</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="java.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="border"></div> -->
+      <div class="firsXtDiv border">
+        <a href="/index.html"><img id="logo" src="images/previous.png" alt="" />
+       </a>
+        </div>
+      <div class="secondDiv border">
+        <h2>Quick Sort Algorithm</h2>
+        <br />
+        <p>
+          QuickSort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways. 
+
+Always pick the first element as a pivot.
+Always pick the last element as a pivot (implemented below)
+Pick a random element as a pivot.
+Pick median as the pivot.
+The key process in quickSort is a partition(). The target of partitions is, given an array and an element x of an array as the pivot, put x at its correct position in a sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.
+        </p>
+        <br />
+        <h2>How does Quick Sort Work?</h2>
+        <br />
+        <p>To understand the working of quick sort, let's take an unsorted array. It will make the concept more clear and understandable.</p>
+        <p>Let the elements of array are -</p>
+        <p>Let the elements of array are -</p>
+        <img src="https://static.javatpoint.com/ds/images/quick-sort2.png" alt="Quick Sort Algorithm">
+        <p>In the given array, we consider the leftmost element as pivot. So, in this case, a[left] = 24, a[right] = 27 and a[pivot] = 24.</p>
+        <p>Since, pivot is at left, so algorithm starts from right and move towards left.</p>
+        <img src="https://static.javatpoint.com/ds/images/quick-sort3.png" alt="Quick Sort Algorithm">
+        <p>Now, a[pivot] < a[right], so algorithm moves forward one position towards left, i.e. -</p>
+        <img src="https://static.javatpoint.com/ds/images/quick-sort4.png" alt="Quick Sort Algorithm">
+        <p>Now, a[left] = 24, a[right] = 19, and a[pivot] = 24.</p>
+        <p>Because, a[pivot] &gt; a[right], so, algorithm will swap a[pivot] with a[right], and pivot moves to right, as -</p>
+        <img src="https://static.javatpoint.com/ds/images/quick-sort5.png" alt="Quick Sort Algorithm">
+        <p>Now, a[left] = 19, a[right] = 24, and a[pivot] = 24. Since, pivot is at right, so algorithm starts from left and moves to right.</p>
+        <p>As a[pivot] > a[left], so algorithm moves one position to right as -</p>
+        <img src="https://static.javatpoint.com/ds/images/quick-sort6.png" alt="Quick Sort Algorithm">
+        <p>Now, a[left] = 9, a[right] = 24, and a[pivot] = 24. As a[pivot] &gt; a[left], so algorithm moves one position to right as -</p>
+        <img src="https://static.javatpoint.com/ds/images/quick-sort7.png" alt="Quick Sort Algorithm">
+        <p>Now, a[left] = 29, a[right] = 24, and a[pivot] = 24. As a[pivot] &lt; a[left], so, swap a[pivot] and a[left], now pivot is at left, i.e. -</p>
+        <img src="https://static.javatpoint.com/ds/images/quick-sort8.png" alt="Quick Sort Algorithm">
+        <p>Since, pivot is at left, so algorithm starts from right, and move to left. Now, a[left] = 24, a[right] = 29, and a[pivot] = 24. As a[pivot] &lt; a[right], so algorithm moves one position to left, as -</p>
+        <img src="https://static.javatpoint.com/ds/images/quick-sort9.png" alt="Quick Sort Algorithm">
+        <p>Now, a[pivot] = 24, a[left] = 24, and a[right] = 14. As a[pivot] &gt; a[right], so, swap a[pivot] and a[right], now pivot is at right, i.e. -</p>
+        <img src="https://static.javatpoint.com/ds/images/quick-sort10.png" alt="Quick Sort Algorithm">
+        <p>Now, a[pivot] = 24, a[left] = 14, and a[right] = 24. Pivot is at right, so the algorithm starts from left and move to right.</p>
+        <img src="https://static.javatpoint.com/ds/images/quick-sort11.png" alt="Quick Sort Algorithm">
+        <p>Now, a[pivot] = 24, a[left] = 24, and a[right] = 24. So, pivot, left and right are pointing the same element. It represents the termination of procedure.
+
+          Element 24, which is the pivot element is placed at its exact position.
+          
+          Elements that are right side of element 24 are greater than it, and the elements that are left side of element 24 are smaller than it.</p>
+          <img src="https://static.javatpoint.com/ds/images/quick-sort12.png" alt="Quick Sort Algorithm">
+          <p>Now, in a similar manner, quick sort algorithm is separately applied to the left and right sub-arrays. After sorting gets done, the array will be -</p>
+          <img src="https://static.javatpoint.com/ds/images/quick-sort13.png" alt="Quick Sort Algorithm">
+        <!-- <p><strong>Illustration:</strong></p> -->
+        </blockquote>
+        <div class="buttonClass">
+          <!-- <button>View Visulaziaton</button> -->
+        </div>
+      </div>
+      <div class="thirdDiv">
+        <div class="thirdDivFirst">
+          <img src="images/Quick sort.png" alt="" />
+          <!-- <h3>this image</h3> -->
+        </div>
+        <div class="fourthDiv">
+          <button onclick="location.href='/quick/index.html'" >
+            View Visulaziaton</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="java.js"></script>
+  </body>
+</html>

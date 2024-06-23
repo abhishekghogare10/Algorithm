@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="border"></div> -->
+      <div class="firsXtDiv border">
+        <a href="/index.html"> <img id="logo" src="images/previous.png" alt="" />
+      </a>
+        </div>
+      <div class="secondDiv border">
+        <h2>Bubble Sort Algorithm</h2>
+        <br />
+        <p>
+          we will discuss the Bubble sort Algorithm. The working procedure of bubble sort is simplest. This article will be very helpful and interesting to students as they might face bubble sort as a question in their examinations. So, it is important to discuss the topic.
+
+          Bubble sort works on the repeatedly swapping of adjacent elements until they are not in the intended order. It is called bubble sort because the movement of array elements is just like the movement of air bubbles in the water. Bubbles in water rise up to the surface; similarly, the array elements in bubble sort move to the end in each iteration.
+          
+          Although it is simple to use, it is primarily used as an educational tool because the performance of bubble sort is poor in the real world. It is not suitable for large data sets. The average and worst-case complexity of Bubble sort is O(n2), where n is a number of items.
+        </p>
+        <br />
+        <h2>How does Bubble Sort Work?</h2>
+        <br />
+        <p>Now, let's see the working of Bubble sort Algorithm.</p>
+<img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm3.png" alt="Bubble sort Algorithm">
+<p>Here, 26 is smaller than 36. So, swapping is required. After swapping new array will look like -</p>
+<img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm4.png" alt="Bubble sort Algorithm">
+
+          To understand the working of bubble sort algorithm, let's take an unsorted array. We are taking a short and accurate array, as we know the complexity of bubble sort is O(n2).
+          
+          Let the elements of array are -</p>
+          <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm1.png" alt="Bubble sort Algorithm">
+          <h3 class="h3">First Pass</h3>
+          <p>Sorting will start from the initial two elements. Let compare them to check which is greater.</p>
+          <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm2.png" alt="Bubble sort Algorithm">
+          <p>Here, 32 is greater than 13 (32 &gt; 13), so it is already sorted. Now, compare 32 with 26.</p>
+          <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm3.png" alt="Bubble sort Algorithm">
+          <p>Here, 26 is smaller than 36. So, swapping is required. After swapping new array will look like -</p>
+          <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm4.png" alt="Bubble sort Algorithm">
+           <p>Now, compare 32 and 35.</p>
+           <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm5.png" alt="Bubble sort Algorithm">
+           <p>Here, 35 is greater than 32. So, there is no swapping required as they are already sorted.
+
+            Now, the comparison will be in between 35 and 10.</p>
+            <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm6.png" alt="Bubble sort Algorithm">
+            <p>Here, 10 is smaller than 35 that are not sorted. So, swapping is required. Now, we reach at the end of the array. After first pass, the array will be -</p>
+            <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm7.png" alt="Bubble sort Algorithm">
+
+            <p>Now, move to the second iteration.</p>
+            <h3 class="h3">Second Pass</h3>
+            <p>The same process will be followed for second iteration.</p>
+            <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm8.png" alt="Bubble sort Algorithm">
+            <p>Here, 10 is smaller than 32. So, swapping is required. After swapping, the array will be -</p>
+            <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm9.png" alt="Bubble sort Algorithm">
+            <p>Now, move to the third iteration.</p>
+            <h3 class="h3">Third Pass</h3>
+            <p>The same process will be followed for third iteration.</p>
+            <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm10.png" alt="Bubble sort Algorithm">
+            <p>Here, 10 is smaller than 26. So, swapping is required. After swapping, the array will be -</p>
+            <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm11.png" alt="Bubble sort Algorithm">
+            <p>Now, move to the fourth iteration.</p>
+            <h3 class="h3">Fourth pass</h3>
+            <p>Similarly, after the fourth iteration, the array will be -</p>
+            <img src="https://static.javatpoint.com/ds/images/bubble-sort-algorithm12.png" alt="Bubble sort Algorithm">
+            <p>Hence, there is no swapping required, so the array is completely sorted.</p>
+          <!-- <p><strong>Illustration:</strong></p> -->
+        </blockquote>
+        <div class="buttonClass">
+          <!-- <button>View Visulaziaton</button> -->
+        </div>
+      </div>
+      <div class="thirdDiv">
+        <div class="thirdDivFirst">
+          <img src="/onclick/images/bubble-sort1.png" alt="" />
+          <!-- <h3>this image</h3> -->
+        </div>
+        <div class="fourthDiv">
+          <button onclick="location.href='/Bubble/index.html'">
+            View Visulaziaton
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/java.js"></script>
+  </body>
+</html>

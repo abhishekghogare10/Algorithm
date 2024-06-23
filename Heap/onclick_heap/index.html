@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+  </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="border"></div> -->
+      <div class="firsXtDiv border">
+       <a href="/index.html"> <img id="logo" src="images/previous.png" alt="" />
+        </a>
+      </div>
+      <div class="secondDiv border">
+        <h2>Heap Sort Algorithm</h2>
+        <br />
+        <p>n this article, we will discuss the Heapsort Algorithm. Heap sort processes the elements by creating the min-heap or max-heap using the elements of the given array. Min-heap or max-heap represents the ordering of array in which the root element represents the minimum or maximum element of the array.
+
+          Heap sort basically recursively performs two main operations -
+          
+          Build a heap H, using the elements of array.
+          Repeatedly delete the root element of the heap formed in 1st phase.
+          Before knowing more about the heap sort, let's first see a brief description of Heap.</p>
+        <br />
+        <h2 class="h2">Working of Heap sort Algorithm</h2>
+        <br />
+        <p>Now, let's see the working of the Heapsort Algorithm.
+
+          In heap sort, basically, there are two phases involved in the sorting of elements. By using the heap sort algorithm, they are as follows -
+          
+          The first step includes the creation of a heap by adjusting the elements of the array.
+          After the creation of heap, now remove the root element of the heap repeatedly by shifting it to the end of the array, and then store the heap structure with the remaining elements.
+          Now let's see the working of heap sort in detail by using an example. To understand it more clearly, let's take an unsorted array and try to sort it using heap sort. It will make the explanation clearer and easier.</p>
+          <!-- <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm1.png" alt="Heap Sort Algorithm"> -->
+          
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm1.png" alt="Heap Sort Algorithm">
+          <p>First, we have to construct a heap from the given array and convert it into max heap.
+
+          </p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm2.png" alt="Heap Sort Algorithm">
+          <p>After converting the given heap into max heap, the array elements are -</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm3.png" alt="Heap Sort Algorithm">
+          <p>Next, we have to delete the root element (89) from the max heap. To delete this node, we have to swap it with the last node, i.e. (11). After deleting the root element, we again have to heapify it to convert it into max heap.
+
+          </p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm4.png" alt="Heap Sort Algorithm">
+          <p>After swapping the array element 89 with 11, and converting the heap into max-heap, the elements of array are -</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm5.png" alt="Heap Sort Algorithm">
+          <p>In the next step, again, we have to delete the root element (81) from the max heap. To delete this node, we have to swap it with the last node, i.e. (54). After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm6.png" alt="Heap Sort Algorithm">
+          <p>After swapping the array element 81 with 54 and converting the heap into max-heap, the elements of array are -
+
+          </p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm7.png" alt="Heap Sort Algorithm">
+          <p>In the next step, we have to delete the root element (76) from the max heap again. To delete this node, we have to swap it with the last node, i.e. (9). After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm8.png" alt="Heap Sort Algorithm">
+          <p>After swapping the array element 76 with 9 and converting the heap into max-heap, the elements of array are -</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm9.png" alt="Heap Sort Algorithm">
+          <p>In the next step, again we have to delete the root element (54) from the max heap. To delete this node, we have to swap it with the last node, i.e. (14). After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm10.png" alt="Heap Sort Algorithm">
+          <p>After swapping the array element 54 with 14 and converting the heap into max-heap, the elements of array are -</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm11.png" alt="Heap Sort Algorithm">
+          <p>In the next step, again we have to delete the root element <strong>(22)</strong> from the max heap. To delete this node, we have to swap it with the last node, i.e. <strong>(11).</strong> After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm12.png" alt="Heap Sort Algorithm">
+          <p>After swapping the array element <strong>22</strong> with <strong>11</strong> and converting the heap into max-heap, the elements of array are -</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm13.png" alt="Heap Sort Algorithm">
+          <p>In the next step, again we have to delete the root element <strong>(14)</strong> from the max heap. To delete this node, we have to swap it with the last node, i.e. <strong>(9).</strong> After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm14.png" alt="Heap Sort Algorithm">
+          <p>After swapping the array element <strong>14</strong> with <strong>9</strong> and converting the heap into max-heap, the elements of array are -</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm15.png" alt="Heap Sort Algorithm">
+          <p>In the next step, again we have to delete the root element <strong>(11)</strong> from the max heap. To delete this node, we have to swap it with the last node, i.e. <strong>(9).</strong> After deleting the root element, we again have to heapify it to convert it into max heap.</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm16.png" alt="Heap Sort Algorithm">
+          <p>After swapping the array element <strong>11</strong> with <strong>9,</strong> the elements of array are -</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm17.png" alt="Heap Sort Algorithm">
+          <p>Now, heap has only one element left. After deleting it, heap will be empty.</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm18.png" alt="Heap Sort Algorithm">
+          <p>After completion of sorting, the array elements are -</p>
+          <img src="https://static.javatpoint.com/ds/images/heap-sort-algorithm19.png" alt="Heap Sort Algorithm">
+          <p>Now, the array is completely sorted.</p>
+          <!-- <p><strong>Illustration:</strong></p> -->
+        </blockquote>
+        <div class="buttonClass">
+          <!-- <button>View Visulaziaton</button> -->
+        </div>
+      </div>
+      <div class="thirdDiv">
+        <div class="thirdDivFirst">
+          <img src="images/heap_sort.png" alt="merge sort" />
+          <!-- <h3>this image</h3> -->
+        </div>
+        <div class="fourthDiv">
+          <button onclick="location.href='/Heap/index.html'">
+            View Visulaziaton</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="java.js"></script>
+  </body>
+</html>

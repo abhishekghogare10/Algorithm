@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="border"></div> -->
+      <div class="firsXtDiv border">
+        <a href="/index.html"> <img id="logo" src="images/previous.png" alt="" />
+      </a>
+        </div>
+      <div class="secondDiv border">
+        <h1>Dijkstra's Algorithm</h1>
+        <br />
+        <p class="editor-contents__short-description">Dijkstra's algorithm allows us to find the shortest path between any two vertices of a graph.</p>
+        <p>It differs from the minimum spanning tree because the shortest distance between two vertices might not include all the vertices of the graph.</p>
+        <br>
+        <h2>How Dijkstra's Algorithm works</h2>
+        <br>
+        <p>Dijkstra's Algorithm works on the basis that any subpath B -> D of the shortest path A -> D between vertices A and D is also the shortest path between vertices B and D</p>
+        <p>Djikstra used this property in the opposite direction i.e we overestimate the distance of each vertex from the starting vertex. Then we visit each node and its neighbors to find the shortest subpath to those neighbors.
+
+The algorithm uses a greedy approach in the sense that we find the next best solution hoping that the end result is the best solution for the whole problem.
+
+</p>
+<br>
+     <h2>Example of Dijkstra's algorithm</h2>
+     <br>
+     <p>It is easier to start with an example and then think about the algorithm.</p>
+     <figure><img alt="Start with a weighted graph" height="306" src="//cdn.programiz.com/sites/tutorial2program/files/dj-1.png" title="Dijkstra's algorithm steps" width="730"><figcaption>Start with a weighted graph</figcaption></figure>
+     <!-- <img alt="Start with a weighted graph" height="306" src="//cdn.programiz.com/sites/tutorial2program/files/dj-1.png" title="Dijkstra's algorithm steps" width="730"> -->
+     <!-- <figcaption>Start with a weighted graph</figcaption> -->
+     <figure><img alt="Choose a starting vertex and assign infinity path values to all other devices" height="306" src="//cdn.programiz.com/sites/tutorial2program/files/dj-2.png" title="Dijkstra's algorithm steps" width="730"><figcaption>Choose a starting vertex and assign infinity path values to all other devices</figcaption></figure>
+     <figure><img alt="Go to each vertex and update its path length" height="306" src="//cdn.programiz.com/sites/tutorial2program/files/dj-3.png" title="Dijkstra's algorithm steps" width="730"><figcaption>Go to each vertex and update its path length</figcaption></figure>
+     <figure><img alt="If the path length of the adjacent vertex is lesser than new path length, don't update it" height="306" src="//cdn.programiz.com/sites/tutorial2program/files/dj-4.png" title="Dijkstra's algorithm steps" width="730"><figcaption>If the path length of the adjacent vertex is lesser than new path length, don't update it</figcaption></figure>
+     <figure><img alt="Avoid updating path lengths of already visited vertices" height="330" src="//cdn.programiz.com/sites/tutorial2program/files/dj-5.png" title="Dijkstra's algorithm steps" width="730"><figcaption>Avoid updating path lengths of already visited vertices</figcaption></figure>
+     <figure><img alt="After each iteration, we pick the unvisited vertex with the least path length. So we choose 5 before 7" height="306" src="//cdn.programiz.com/sites/tutorial2program/files/dj-6.png" title="Dijkstra's algorithm steps" width="730"><figcaption>After each iteration, we pick the unvisited vertex with the least path length. So we choose 5 before 7</figcaption></figure>
+     <figure><img alt="Notice how the rightmost vertex has its path length updated twice" height="306" src="//cdn.programiz.com/sites/tutorial2program/files/dj-7.png" title="Dijkstra's algorithm steps" width="730"><figcaption>Notice how the rightmost vertex has its path length updated twice</figcaption></figure>
+     <figure><img alt="Repeat until all the vertices have been visited" height="306" src="//cdn.programiz.com/sites/tutorial2program/files/dj-8.png" title="Dijkstra's algorithm steps" width="730"><figcaption>Repeat until all the vertices have been visited</figcaption></figure>
+          <!-- <p><strong>Illustration:</strong></p> -->
+        </blockquote>
+        <div class="buttonClass">
+          <!-- <button>View Visulaziaton</button> -->
+        </div>
+      </div>
+      <div class="thirdDiv">
+        <div class="thirdDivFirst">
+          <img src="images/Dijkstra.png" alt="" />
+          <!-- <h3>this image</h3> -->
+        </div>
+        <div class="fourthDiv">
+          <button onclick="location.href='/Dikstras/index.html'">
+            View Visulaziaton
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/java.js"></script>
+  </body>
+</html>

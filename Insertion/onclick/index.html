@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="border"></div> -->
+      <div class="firsXtDiv border">
+        <a href="/index.html"><img id="logo" src="images/previous.png" alt="" />
+        </a>      
+        </div>
+      <div class="secondDiv border">
+        <h1>Insertion Sort Algorithm</h1>
+        <br />
+        <p>In this article, we will discuss the Insertion sort Algorithm. The working procedure of insertion sort is also simple. This article will be very helpful and interesting to students as they might face insertion sort as a question in their examinations. So, it is important to discuss the topic.</p>
+        <p>Insertion sort works similar to the sorting of playing cards in hands. It is assumed that the first card is already sorted in the card game, and then we select an unsorted card. If the selected unsorted card is greater than the first card, it will be placed at the right side; otherwise, it will be placed at the left side. Similarly, all unsorted cards are taken and put in their exact place.</p>
+        <p>The same approach is applied in insertion sort. The idea behind the insertion sort is that first take one element, iterate it through the sorted array. Although it is simple to use, it is not appropriate for large data sets as the time complexity of insertion sort in the average case and worst case is <strong>O(n<sup>2</sup>)</strong>, where n is the number of items. Insertion sort is less efficient than the other sorting algorithms like heap sort, quick sort, merge sort, etc.</p>
+        <br>
+        <!-- <h1>Algorithm</h1> -->
+        <!-- <pre>
+        
+The simple steps of achieving the insertion sort are listed as follows -
+
+Step 1 - If the element is the first element, assume that it is already sorted. Return 1.
+
+Step2 - Pick the next element, and store it separately in a key.
+
+Step3 - Now, compare the key with all elements in the sorted array.
+
+Step 4 - If the element in the sorted array is smaller than the current element, then move to the next element. Else, shift greater elements in the array towards the right.
+
+Step 5 - Insert the value.
+
+Step 6 - Repeat until the array is sorted.
+        </pre> -->
+        <h2 class="h2">Working of Insertion sort Algorithm</h2>
+        <br>
+        <p>Now, let's see the working of the insertion sort Algorithm.</p>
+        <p>Let the elements of array are -</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort.png" alt="Insertion Sort Algorithm">
+        <p>Initially, the first two elements are compared in insertion sort.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort2.png" alt="Insertion Sort Algorithm">
+        <p>Here, 31 is greater than 12. That means both elements are already in ascending order. So, for now, 12 is stored in a sorted sub-array.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort3.png" alt="Insertion Sort Algorithm">
+        <p>Now, move to the next two elements and compare them.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort4.png" alt="Insertion Sort Algorithm">
+        <p>Here, 25 is smaller than 31. So, 31 is not at correct position. Now, swap 31 with 25. Along with swapping, insertion sort will also check it with all elements in the sorted array.</p>
+        <p>For now, the sorted array has only one element, i.e. 12. So, 25 is greater than 12. Hence, the sorted array remains sorted after swapping.
+        </p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort5.png" alt="Insertion Sort Algorithm">
+        <p>Now, two elements in the sorted array are 12 and 25. Move forward to the next elements that are 31 and 8.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort6.png" alt="Insertion Sort Algorithm">
+        <p>Both 31 and 8 are not sorted. So, swap them.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort7.png" alt="Insertion Sort Algorithm">
+        <p>After swapping, elements 25 and 8 are unsorted.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort8.png" alt="Insertion Sort Algorithm">
+        <p>So, swap them.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort9.png" alt="Insertion Sort Algorithm">
+        <p>Now, elements 12 and 8 are unsorted.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort10.png" alt="Insertion Sort Algorithm">
+        <p>So, swap them too.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort11.png" alt="Insertion Sort Algorithm">
+        <p>Now, the sorted array has three items that are 8, 12 and 25. Move to the next items that are 31 and 32.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort12.png" alt="Insertion Sort Algorithm">
+        <p>Hence, they are already sorted. Now, the sorted array includes 8, 12, 25 and 31.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort13.png" alt="Insertion Sort Algorithm">
+        <p>Move to the next elements that are 32 and 17.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort14.png" alt="Insertion Sort Algorithm">
+        <p>17 is smaller than 32. So, swap them.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort15.png" alt="Insertion Sort Algorithm">
+        <p>Swapping makes 31 and 17 unsorted. So, swap them too.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort16.png" alt="Insertion Sort Algorithm">
+        <p>Now, swapping makes 25 and 17 unsorted. So, perform swapping again.</p>
+        <img src="https://static.javatpoint.com/ds/images/insertion-sort17.png" alt="Insertion Sort Algorithm">
+        <p>Now, the array is completely sorted.</p>
+
+        <!-- <p><strong>Illustration:</strong></p> -->
+        </blockquote>
+        <div class="buttonClass">
+          <!-- <button>View Visulaziaton</button> -->
+        </div>
+      </div>
+      <div class="thirdDiv">
+        <div class="thirdDivFirst">
+          <img src="images/insertion_sort.png" alt="" />
+          <!-- <h3>this image</h3> -->
+        </div>
+        <div class="fourthDiv">
+          <button onclick="location.href='/Insertion/index.html'">
+            View Visulaziaton</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="java.js"></script>
+  </body>
+</html>
